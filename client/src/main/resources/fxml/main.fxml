@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="569.0" prefWidth="844.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controller.MainWindowController">
+    <TableView fx:id="tableView" layoutX="7.0" layoutY="69.0" prefHeight="200.0" prefWidth="862.0" styleClass="table-view">
+        <columns>
+            <TableColumn prefWidth="30.0" text="ID" />
+            <TableColumn prefWidth="45.0" text="Name" />
+            <TableColumn prefWidth="50.0" text="X coord" />
+            <TableColumn prefWidth="50.0" text="Y coord" />
+            <TableColumn prefWidth="90.0" text="Creation date" />
+            <TableColumn prefWidth="50.0" text="Salary" />
+            <TableColumn prefWidth="65.0" text="Start date" />
+            <TableColumn prefWidth="55.0" text="Position" />
+            <TableColumn prefWidth="50.0" text="Status" />
+            <TableColumn prefWidth="75.0" text="Passport ID" />
+            <TableColumn prefWidth="60.0" text="Eye color" />
+            <TableColumn prefWidth="65.0" text="Hair color" />
+            <TableColumn prefWidth="40.0" text="X loc" />
+            <TableColumn prefWidth="50.0" text="Y loc" />
+            <TableColumn prefWidth="70.0" text="Name loc" />
+        </columns>
+    </TableView>
+    <TextArea fx:id="serverMessages" layoutX="13.0" layoutY="408.0" prefWidth="459.0" styleClass="serverMessages" promptText="%server_messages" editable="false"/>
+    <TextField fx:id="idField" layoutX="7.0" layoutY="296.0" prefHeight="28.0" prefWidth="50.0" promptText="ID" styleClass="partField" />
+    <TextField fx:id="nameField" layoutX="82.0" layoutY="296.0" prefHeight="28.0" prefWidth="89.0" promptText="Name" styleClass="partField" />
+    <TextField fx:id="xCoordField" layoutX="193.0" layoutY="296.0" prefHeight="28.0" prefWidth="97.0" promptText="X coord" styleClass="partField"  />
+    <TextField fx:id="yCoordField" layoutX="317.0" layoutY="296.0" prefHeight="28.0" prefWidth="91.0" promptText="Y coord" styleClass="partField" />
+    <TextField fx:id="salaryField" layoutX="441.0" layoutY="296.0" prefHeight="28.0" prefWidth="107.0" promptText="Salary" styleClass="partField" />
+    <TextField fx:id="positionField" layoutX="582.0" layoutY="296.0" prefHeight="28.0" prefWidth="118.0" promptText="Position" styleClass="partField" />
+    <TextField fx:id="statusField" layoutX="737.0" layoutY="296.0" prefHeight="28.0" prefWidth="109.0" promptText="Status" styleClass="partField" />
+    <TextField fx:id="passportIdField" layoutX="7.0" layoutY="349.0" prefHeight="28.0" prefWidth="101.0" promptText="Passport ID" styleClass="partField" />
+    <TextField fx:id="eyeColorField" layoutX="136.0" layoutY="349.0" prefHeight="28.0" prefWidth="105.0" promptText="Eye color" styleClass="partField" />
+    <TextField fx:id="hairColorField" layoutX="269.0" layoutY="349.0" prefHeight="28.0" prefWidth="118.0" promptText="Hair color" styleClass="partField" />
+    <TextField fx:id="xLocField" layoutX="422.0" layoutY="349.0" prefHeight="28.0" prefWidth="101.0" promptText="X loc" styleClass="partField" />
+    <TextField fx:id="yLocField" layoutX="549.0" layoutY="349.0" prefHeight="28.0" prefWidth="108.0" promptText="Y loc" styleClass="partField" />
+    <TextField fx:id="nameLocField" layoutX="689.0" layoutY="349.0" prefHeight="28.0" prefWidth="109.0" promptText="Name loc" styleClass="partField" />
+
+    <TextField fx:id="commandInputField" layoutX="582.0" layoutY="407.0" prefHeight="43.0" prefWidth="282.0" promptText="%command_input_field" styleClass="commandInputField" />
+    <Label fx:id="userNameLabel" cache="true" depthTest="ENABLE" layoutX="587.0" layoutY="540.0" prefHeight="42.0" prefWidth="282.0" styleClass="userNameLabel" />
+    <Button fx:id="deleteButton" layoutX="482.0" layoutY="540.0" onAction="#handleDeleteButton" styleClass="mainWindowButton" text="%delete_button">
+    </Button>
+    <Button fx:id="updateButton" layoutX="482.0" layoutY="474.0" onAction="#handleUpdateButton" mnemonicParsing="false" styleClass="mainWindowButton" text="%update_button">
+    </Button>
+    <Button fx:id="addButton" layoutX="482.0" layoutY="408.0" onAction="#handleAddButton" mnemonicParsing="false" styleClass="mainWindowButton" text="%add_button">
+    </Button>
+    <Button fx:id="submitButton" layoutX="651.0" layoutY="474.0" onAction="#handleSubmitButton" mnemonicParsing="false" styleClass="mainWindowButton" text="%submit_button">
+    </Button>
+    <Button fx:id="drawButton" layoutX="766.0" layoutY="474.0" onAction="#handleDrawButton" mnemonicParsing="false" styleClass="mainWindowButton" text="%draw_button">
+    </Button>
+</AnchorPane>

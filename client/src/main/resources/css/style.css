@@ -1,0 +1,123 @@
+.root {
+    -fx-background-color: #014B7F;
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+.mainLabel {
+    -fx-pref-height: 51.0;
+    -fx-pref-width: 398.0;
+    -fx-font-family: "Arial";
+    -fx-font-size: 35px;
+    -fx-padding-bottom: 20px;
+    -fx-text-fill: #E0F7FA;
+
+}
+
+.usernameField, .passwordField1 {
+    -fx-pref-height: 40px;
+    -fx-pref-width: 200px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+    -fx-background-color: #E0F7FA;
+    -fx-text-fill: black;
+    -fx-margin-bottom: 10px;
+}
+
+.loginButton {
+    -fx-pref-height: 40px;
+    -fx-pref-width: 200px;
+    -fx-background-color: #00A36C;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.2), 5, 0.0, 2, 2);
+    -fx-margin-top: 10px;
+}
+
+.loginButton:hover,
+.mainWindowButton:hover {
+    -fx-background-color: #007A4C;
+}
+
+.alternativeLabel {
+    -fx-font-family: "Arial";
+    -fx-font-size: 12px;
+    -fx-text-fill: #B2EBF2;
+    -fx-padding-top: 10px;
+}
+
+.errorLabel {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-text-fill: #d00068;
+    -fx-padding-top: 10px;
+}
+
+.langChoiceBox {
+    -fx-pref-height: 40px;
+    -fx-pref-width: 120px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-border-color: #B2EBF2;
+
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-background-color: #E0F7FA;
+    -fx-text-fill: black;
+}
+
+.partField {
+    -fx-background-color: #E0F7FA;
+    -fx-font-weight: bold;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent; /* Убираем границы ячеек */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #E0F7FA; /* Замена серого на светло-голубой цвет */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #E0F7FA; /* Замена серого на светло-голубой цвет */
+    -fx-padding: 5; /* Внутренние отступы */
+    -fx-font-size: 10px; /* Уменьшение размера шрифта */
+    -fx-min-width: 80px; /* Минимальная ширина столбцов */
+}
+
+.mainWindowButton {
+    -fx-pref-height: 41;
+    -fx-pref-width: 80;
+    -fx-background-color: #00A36C;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.2), 5, 0.0, 2, 2);
+    -fx-margin-top: 10px;
+}
+
+.commandInputField {
+    -fx-background-color: #E0F7FA;
+}
+
+.userNameLabel {
+    -fx-pref-height: 41.0;
+    -fx-pref-wight: 272.0;
+    -fx-background-color: #E0F7FA;
+}
+
+.serverMessages {
+    -fx-pref-height: 174.0;
+    -fx-pref-wight: 300.0;
+    -fx-background-color: #E0F7FA;
+}
