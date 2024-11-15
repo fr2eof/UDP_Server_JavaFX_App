@@ -24,7 +24,7 @@ public class ClientApp extends Application {
         loader.setResources(ResourceBundle.getBundle("messages", Locale.US));
         Parent root = loader.load();
         Scene scene = new Scene(root);
-        primaryStage.setTitle("My Application Title");
+        //primaryStage.setTitle("My Application Title");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();

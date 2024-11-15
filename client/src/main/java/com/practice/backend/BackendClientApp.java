@@ -21,7 +21,6 @@ import java.util.Map;
 
 public class BackendClientApp {
     //todo Такой параметр как продолжительность жизни токена рекомендую вынести в application.properties.
-    //todo хорошо было бы сделать обмен информацией через чанки
     private static final Logger log = LoggerFactory.getLogger(BackendClientApp.class);
     private static Invoker invoker;
     private static final int PORT = 8383;

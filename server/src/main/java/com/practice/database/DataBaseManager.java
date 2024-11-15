@@ -35,15 +35,16 @@ public class DataBaseManager {
     private static List<Connection> sourceConnections;
 
     public DataBaseManager() {
-        try {
-            Properties prop = new Properties();
-            FileInputStream fis = new FileInputStream("application.properties");
-            prop.load(fis);
-            //POOL_SIZE = Integer.parseInt(prop.getProperty("db.poolSize"));
-            POOL_SIZE = 10;
-        } catch (IOException ex) {
-            log.error("Problem with resources opening {}", ex.getMessage());
-        }
+//        try {
+////            Properties prop = new Properties();
+////            FileInputStream fis = new FileInputStream("application.properties");
+////            prop.load(fis);
+//            //POOL_SIZE = Integer.parseInt(prop.getProperty("db.poolSize"));
+//
+//        } catch (IOException ex) {
+//            log.error("Problem with resources opening {}", ex.getMessage());
+//        }
+        POOL_SIZE = 10;
         initConnectionPool();
     }
 
@@ -78,7 +79,7 @@ public class DataBaseManager {
 
     private static Connection open() throws IOException, SQLException {
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("application.properties");
+        FileInputStream fis = new FileInputStream("/Users/fr2eof/IdeaProjects/UDP_Server_JavaFX_App/server/src/main/resources/application.properties");
         prop.load(fis);
         return DriverManager.getConnection(prop.getProperty(URL), prop.getProperty(USERNAME), prop.getProperty(PASSWORD));
     }

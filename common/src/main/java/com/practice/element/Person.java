@@ -5,8 +5,8 @@ import com.practice.enumeration.HColor;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 public class Person {
     private String passportID;
     EColor eyeColor;
